@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+a {
+  color: #231f20;
+  text-decoration: none;
+}
+a:visited {
+  color: #231f20;
+}
+
+.container {
+  max-width: 1000px;
+  background-color: #fafafa;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container {
+  margin: 1em auto;
+  width: 23em;
+  text-align: center;
+  background-color: #ffffff;
+  /* height: 65vh; */
+  padding: 2.3em;
+  border: #dbdbdb 0.1em solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  background-color: inherit;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 2.6em;
+  font-weight: 600;
+}
+
+.input-fields {
+  background-color: #ffffff;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+.input-signup {
+  height: 3em;
+  width: 100%;
+  border: #dbdbdb 0.1em solid;
+  background-color: #fafafa;
+  padding: 0.4em;
+}
+
+.input-signup:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.button-signup {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 0.5em;
+  background-color: #0095f6;
+  height: 2.3em;
+  width: 6em;
+  border: #dbdbdb 0.1em solid;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.input-sign {
+  height: 3em;
+  width: 100%;
+  border: #dbdbdb 0.1em solid;
+  background-color: #fafafa;
+  padding: 0.4em;
+}
+
+.input-sign:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+  background-color: #0095f6;
+  height: 2.3em;
+  border: #dbdbdb 0.1em solid;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.signup-subtext {
+  color: #8e8e8e;
+  background-color: inherit;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.nav-container {
+  background: #ffffff;
+
+  height: 3.5em;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  background-color: #ffffff;
+  /* margin-left: 8.8em; */
+  cursor: pointer;
+  font-family: 'Grand Hotel', cursive;
+}
+
+.nav-buttons-container {
+  /* margin-right: 17em; */
+  background: #ffffff;
+}
+
+.nav-buttons {
+  margin: 0 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link {
+  margin: 0 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 0.3em;
+
+  font-size: 1.2em;
+  font-weight: 550;
+  height: 3em;
+}
+
+.post {
+  background-color: #ffffff;
+  margin: 1em auto;
+  border: #dbdbdb 0.1em solid;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.post-image {
+  width: 100%;
+  margin: 1em auto;
+}
+
+.post-user {
+  /* margin: 0.5em; */
+  font-size: 1.1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-profileimg {
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-info {
+  margin-bottom: 0.8em;
+  font-size: 1em;
+}
+
+.post-info:last-of-type {
+  margin-bottom: 0.3em;
+}
+
+.post-comments {
+  /* margin: 0 1em 1em 1em; */
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.post-input {
+  height: 3.5em;
+  width: 95%;
+  border: none;
+  background-color: #fafafa;
+  padding: 1em;
+  margin: auto;
+}
+
+.post-btn {
+  margin-left: -2em;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  width: 10%;
+  color: #dbdbdb;
+  padding: 0.6em;
+  cursor: pointer;
+}
+
+.divider {
+  border: #dbdbdb 1px solid;
+  margin-bottom: 0.3em;
+}
+
+.profile-info {
+  padding: 2em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-image-container {
+  border-radius: 50%;
+  /* padding: 0.6em; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  margin: auto;
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-data {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  justify-content: flex-start;
+}
+
+.item {
+  width: 30%;
+  height: 18em;
+  object-fit: cover;
+  margin: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.item:hover {
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.1s ease;
+}
+
+.explore-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+
+.explore-item {
+  width: 24%;
+  height: 15em;
+  object-fit: cover;
+  /* margin: 0.5em; */
+  margin-bottom: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+.explore-item img {
+  min-width: 100%;
+  max-height: 15em;
+  object-fit: cover;
+}
+
+.explore-item:hover {
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.1s ease;
+}
+
+.post-add {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: center;
+  height: 50vh;
+  width: 30em;
+}
+
+.post-add-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.post-add-input {
+  width: 100%;
+  height: 10vh;
+  border: none;
+  background-color: #fafafa;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.post-dailog {
+  display: flex;
+}
+
+.post-dailog-image-container {
+  display: flex;
+  flex: 2;
+}
+
+.post-dailog-image {
+  object-fit: cover;
+  max-height: 90vh;
+  min-width: 35em;
+  margin: auto;
+}
+
+.post-dailog-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em;
+  min-width: 20em;
+}
+
+.post-dailog-user {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.post-dailog-buttons {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.post-dialog-comments {
+  margin-bottom: auto;
+}
+
+.like-btn {
+  color: #aeaeae;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  color: rgb(228, 52, 52);
+}
+
+.unlike-btn {
+  color: rgb(228, 52, 52);
+  cursor: pointer;
+}
+
+.unlike-btn:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  color: #aeaeae;
+}
+
+.cmnt-btn {
+  color: #aeaeae;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: rgb(228, 52, 52);
+  cursor: pointer;
+}
+
+.no-content {
+  padding: 1em;
+  margin-top: 4em;
+  font-size: 2em;
+  font-weight: 40;
+  background-color: rgb(226, 226, 226, 0.2);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.search-bar {
+  height: 3em;
+  width: 30em;
+  border: #dbdbdb 0.1em solid;
+  background-color: #fafafa;
+  padding: 0.4em;
+  border-radius: 0.3em;
+  text-align: center;
+}
+
+.search-modal {
+  padding: 1em;
+  min-height: 70vh;
+}
+
+.search-results {
+  margin-top: 0.5em;
+  padding: 0.2em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-results div {
+  height: 2em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0.5em 0.2em 0.5em;
+  background-color: #fafafa;
+  border-bottom: #dbdbdb 0.1em solid;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.no-page {
+  background-color: indianred;
+  margin: 10em auto;
+  text-align: center;
+  background-color: rgb(226, 226, 226, 0.2);
+}
+
+.no-page p {
+  font-size: 10em;
+}
+
+.no-page span {
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  font-weight: 50;
+}
